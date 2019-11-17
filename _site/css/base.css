@@ -1,0 +1,528 @@
+.grid {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px 2fr;
+  grid-template-rows: 1fr;
+  padding: 5rem 10rem;
+}
+
+.left {
+  background: pink;
+}
+
+.right {
+  background: purple;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.grey-purple-grey-black {
+  background: grey;
+}
+.grey-purple-grey-black .left {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid grey;
+  background: purple;
+  align-self: start;
+}
+.grey-purple-grey-black .right {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid grey;
+  background: black;
+  align-self: end;
+}
+
+.purple-purple-purple-darkturquoise {
+  background: purple;
+}
+.purple-purple-purple-darkturquoise .left {
+  width: 0px;
+  border-top: 10px solid purple;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid purple;
+  background: purple;
+  align-self: start;
+}
+.purple-purple-purple-darkturquoise .right {
+  width: 0px;
+  border-top: 10px solid purple;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid purple;
+  background: darkturquoise;
+  align-self: end;
+}
+
+.black-fuchsia-purple-black {
+  background: purple;
+}
+.black-fuchsia-purple-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: fuchsia;
+  align-self: start;
+}
+.black-fuchsia-purple-black .right {
+  width: 0px;
+  border-top: 10px solid purple;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid purple;
+  background: black;
+  align-self: end;
+}
+
+.fuchsia-yellow-yellow-darkturquoise {
+  background: yellow;
+}
+.fuchsia-yellow-yellow-darkturquoise .left {
+  width: 0px;
+  border-top: 10px solid fuchsia;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid fuchsia;
+  background: yellow;
+  align-self: start;
+}
+.fuchsia-yellow-yellow-darkturquoise .right {
+  width: 0px;
+  border-top: 10px solid yellow;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid yellow;
+  background: darkturquoise;
+  align-self: end;
+}
+
+.black-gold-lightgrey-black {
+  background: lightgrey;
+}
+.black-gold-lightgrey-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: gold;
+  align-self: start;
+}
+.black-gold-lightgrey-black .right {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid lightgrey;
+  background: black;
+  align-self: end;
+}
+
+.gold-yellow-yellow-darkturquoise {
+  background: yellow;
+}
+.gold-yellow-yellow-darkturquoise .left {
+  width: 0px;
+  border-top: 10px solid gold;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid gold;
+  background: yellow;
+  align-self: start;
+}
+.gold-yellow-yellow-darkturquoise .right {
+  width: 0px;
+  border-top: 10px solid yellow;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid yellow;
+  background: darkturquoise;
+  align-self: end;
+}
+
+.black-lightgrey-yellow-black {
+  background: yellow;
+}
+.black-lightgrey-yellow-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: lightgrey;
+  align-self: start;
+}
+.black-lightgrey-yellow-black .right {
+  width: 0px;
+  border-top: 10px solid yellow;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid yellow;
+  background: black;
+  align-self: end;
+}
+
+.lightgrey-grey-grey-red {
+  background: grey;
+}
+.lightgrey-grey-grey-red .left {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid lightgrey;
+  background: grey;
+  align-self: start;
+}
+.lightgrey-grey-grey-red .right {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid grey;
+  background: red;
+  align-self: end;
+}
+
+.black-dimgrey-grey-black {
+  background: grey;
+}
+.black-dimgrey-grey-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: dimgrey;
+  align-self: start;
+}
+.black-dimgrey-grey-black .right {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid grey;
+  background: black;
+  align-self: end;
+}
+
+.black-fuchsia-purple-black {
+  background: purple;
+}
+.black-fuchsia-purple-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: fuchsia;
+  align-self: start;
+}
+.black-fuchsia-purple-black .right {
+  width: 0px;
+  border-top: 10px solid purple;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid purple;
+  background: black;
+  align-self: end;
+}
+
+.lightgrey-dimgrey-dimgrey-fuchsia {
+  background: dimgrey;
+}
+.lightgrey-dimgrey-dimgrey-fuchsia .left {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid lightgrey;
+  background: dimgrey;
+  align-self: start;
+}
+.lightgrey-dimgrey-dimgrey-fuchsia .right {
+  width: 0px;
+  border-top: 10px solid dimgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid dimgrey;
+  background: fuchsia;
+  align-self: end;
+}
+
+.black-grey-grey-black {
+  background: grey;
+}
+.black-grey-grey-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: grey;
+  align-self: start;
+}
+.black-grey-grey-black .right {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid grey;
+  background: black;
+  align-self: end;
+}
+
+.grey-yellow-yellow-crimson {
+  background: yellow;
+}
+.grey-yellow-yellow-crimson .left {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid grey;
+  background: yellow;
+  align-self: start;
+}
+.grey-yellow-yellow-crimson .right {
+  width: 0px;
+  border-top: 10px solid yellow;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid yellow;
+  background: crimson;
+  align-self: end;
+}
+
+.black-darkturquoise-red-black {
+  background: red;
+}
+.black-darkturquoise-red-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: darkturquoise;
+  align-self: start;
+}
+.black-darkturquoise-red-black .right {
+  width: 0px;
+  border-top: 10px solid red;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid red;
+  background: black;
+  align-self: end;
+}
+
+.black-darkturquoise-red-black {
+  background: red;
+}
+.black-darkturquoise-red-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: darkturquoise;
+  align-self: start;
+}
+.black-darkturquoise-red-black .right {
+  width: 0px;
+  border-top: 10px solid red;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid red;
+  background: black;
+  align-self: end;
+}
+
+.dimgrey-lightgrey-lightgrey-purple {
+  background: lightgrey;
+}
+.dimgrey-lightgrey-lightgrey-purple .left {
+  width: 0px;
+  border-top: 10px solid dimgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid dimgrey;
+  background: lightgrey;
+  align-self: start;
+}
+.dimgrey-lightgrey-lightgrey-purple .right {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid lightgrey;
+  background: purple;
+  align-self: end;
+}
+
+.darkturquoise-dodgerblue-dodgerblue-fuchsia {
+  background: dodgerblue;
+}
+.darkturquoise-dodgerblue-dodgerblue-fuchsia .left {
+  width: 0px;
+  border-top: 10px solid darkturquoise;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid darkturquoise;
+  background: dodgerblue;
+  align-self: start;
+}
+.darkturquoise-dodgerblue-dodgerblue-fuchsia .right {
+  width: 0px;
+  border-top: 10px solid dodgerblue;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid dodgerblue;
+  background: fuchsia;
+  align-self: end;
+}
+
+.black-lightgrey-lightgrey-black {
+  background: lightgrey;
+}
+.black-lightgrey-lightgrey-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: lightgrey;
+  align-self: start;
+}
+.black-lightgrey-lightgrey-black .right {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid lightgrey;
+  background: black;
+  align-self: end;
+}
+
+.lightgrey-crimson-crimson-red {
+  background: crimson;
+}
+.lightgrey-crimson-crimson-red .left {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid lightgrey;
+  background: crimson;
+  align-self: start;
+}
+.lightgrey-crimson-crimson-red .right {
+  width: 0px;
+  border-top: 10px solid crimson;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid crimson;
+  background: red;
+  align-self: end;
+}
+
+.black-yellow-lightgrey-black {
+  background: lightgrey;
+}
+.black-yellow-lightgrey-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: yellow;
+  align-self: start;
+}
+.black-yellow-lightgrey-black .right {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid lightgrey;
+  background: black;
+  align-self: end;
+}
+
+.yellow-dimgrey-dimgrey-grey {
+  background: dimgrey;
+}
+.yellow-dimgrey-dimgrey-grey .left {
+  width: 0px;
+  border-top: 10px solid yellow;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid yellow;
+  background: dimgrey;
+  align-self: start;
+}
+.yellow-dimgrey-dimgrey-grey .right {
+  width: 0px;
+  border-top: 10px solid dimgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid dimgrey;
+  background: grey;
+  align-self: end;
+}
+
+.black-fuchsia-lightgrey-black {
+  background: lightgrey;
+}
+.black-fuchsia-lightgrey-black .left {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  background: fuchsia;
+  align-self: start;
+}
+.black-fuchsia-lightgrey-black .right {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid lightgrey;
+  background: black;
+  align-self: end;
+}
+
+.fuchsia-grey-grey-grey {
+  background: grey;
+}
+.fuchsia-grey-grey-grey .left {
+  width: 0px;
+  border-top: 10px solid fuchsia;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid fuchsia;
+  background: grey;
+  align-self: start;
+}
+.fuchsia-grey-grey-grey .right {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid grey;
+  background: grey;
+  align-self: end;
+}
+
+/*# sourceMappingURL=base.css.map */
