@@ -20,7 +20,7 @@ $darkturquoise: darkturquoise;
 
 .grid {
     display: grid;
-    grid-template-columns: 10px 1fr 10px 2fr;
+    grid-template-columns: 20px 1fr 30px 2fr;
     grid-template-rows: 1fr;
     padding: 5rem 10rem;
 }
@@ -33,10 +33,19 @@ $darkturquoise: darkturquoise;
     background: purple;
 }
 
-.row {
+@mixin justified($direction)
+{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: $direction;
+}
+
+.row {
+    @include justified(row)
+}
+
+.column {
+    @include justified(column)
 }
 
 @mixin box($tri-l-top, $tri-l-btm) {
@@ -50,9 +59,9 @@ $darkturquoise: darkturquoise;
 
 @mixin box-rev($tri-l-top, $tri-l-btm) {
     width: 0px;
-    border-top: 10px solid transparent;
+    border-top: 10px solid $tri-l-top;
     border-right: 10px solid $tri-l-top;
-    border-bottom: 10px solid $tri-l-top;
+    border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
     background: $tri-l-btm;
 }
@@ -82,15 +91,32 @@ $darkturquoise: darkturquoise;
 //     background:
 //         linear-gradient(132deg, $tri-l-top 0%, $tri-l-top 5%, $tri-l-btm 5%, $tri-l-btm 10%, $rect 10%, $rect 96%, $tri-r 96%);}
 
+.border-left {
+    display: flex;
+}
+// SECTION A
+
 .#{$grey}-#{$purple}-#{$grey}-#{$black} {
     background: grey;
 
     .left {
-    @include box-l(#{$grey}, #{$purple});
+    @include box-rev-l(#{$purple}, #{$grey});
     }
 
     .right {
-    @include box-r(#{$grey}, #{$black});
+    @include box-rev-r(#{$grey}, #{$black});
+    }
+}
+
+.#{$black}-#{$dodgerblue}-#{$dodgerblue}-#{$dodgerblue} {
+    background: dodgerblue;
+
+    .left {
+    @include box-rev-l(#{$dodgerblue}, #{$black});
+    }
+
+    .right {
+    @include box-rev-r(#{$dodgerblue}, #{$dodgerblue});
     }
 }
 

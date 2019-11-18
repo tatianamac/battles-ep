@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: 10px 1fr 10px 2fr;
+  grid-template-columns: 20px 1fr 30px 2fr;
   grid-template-rows: 1fr;
   padding: 5rem 10rem;
 }
@@ -15,8 +15,18 @@
 
 .row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.border-left {
+  display: flex;
 }
 
 .grey-purple-grey-black {
@@ -24,20 +34,42 @@
 }
 .grey-purple-grey-black .left {
   width: 0px;
-  border-top: 10px solid grey;
-  border-right: 10px solid transparent;
+  border-top: 10px solid purple;
+  border-right: 10px solid purple;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid grey;
-  background: purple;
+  border-left: 10px solid transparent;
+  background: grey;
   align-self: start;
 }
 .grey-purple-grey-black .right {
   width: 0px;
   border-top: 10px solid grey;
-  border-right: 10px solid transparent;
+  border-right: 10px solid grey;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid grey;
+  border-left: 10px solid transparent;
   background: black;
+  align-self: end;
+}
+
+.black-dodgerblue-dodgerblue-dodgerblue {
+  background: dodgerblue;
+}
+.black-dodgerblue-dodgerblue-dodgerblue .left {
+  width: 0px;
+  border-top: 10px solid dodgerblue;
+  border-right: 10px solid dodgerblue;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: start;
+}
+.black-dodgerblue-dodgerblue-dodgerblue .right {
+  width: 0px;
+  border-top: 10px solid dodgerblue;
+  border-right: 10px solid dodgerblue;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: dodgerblue;
   align-self: end;
 }
 
