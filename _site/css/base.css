@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: 20px 1fr 30px 2fr;
+  grid-template-columns: 20px 1fr 30px 2fr repeat(12, 20px);
   grid-template-rows: 1fr;
   padding: 5rem 10rem;
 }
@@ -11,6 +11,60 @@
 
 .right {
   background: purple;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-set-1 {
+  display: grid;
+  grid-template-columns: repeat(12, 20px);
+  grid-template-rows: repeat(21, 20px);
+  background: black;
+  height: 160px;
+}
+
+.start-c-4 {
+  grid-column-start: 4;
+}
+
+.span-c-2 {
+  grid-column: span 2;
+}
+
+.span-c-3 {
+  grid-column: span 3;
+}
+
+.span-c-7 {
+  grid-column: span 7;
+}
+
+.span-c-9 {
+  grid-column: span 9;
+}
+
+.span-c-11 {
+  grid-column: span 11;
+}
+
+.span-r-3 {
+  grid-row: span 3;
+}
+
+.span-r-7 {
+  grid-row: span 7;
+}
+
+.span-r-8 {
+  grid-row: span 8;
+}
+
+.span-r-9 {
+  grid-row: span 9;
+}
+
+.span-r-10 {
+  grid-row: span 10;
 }
 
 .row {
@@ -29,10 +83,432 @@
   display: flex;
 }
 
+.black {
+  background: black;
+}
+
+.crimson-purple-red-crimson {
+  background: crimson;
+}
+.crimson-purple-red-crimson .left {
+  width: 0px;
+  border-top: 10px solid crimson;
+  border-right: 10px solid crimson;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: purple;
+  align-self: start;
+}
+.crimson-purple-red-crimson .right {
+  width: 0px;
+  border-top: 10px solid crimson;
+  border-right: 10px solid crimson;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: red;
+  align-self: end;
+}
+
+.crimson-black-black-gold {
+  background: crimson;
+}
+.crimson-black-black-gold .left {
+  width: 0px;
+  border-top: 10px solid crimson;
+  border-right: 10px solid crimson;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: start;
+}
+.crimson-black-black-gold .right {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: gold;
+  align-self: end;
+}
+
+.yellow-gold-gold-yellow {
+  background: yellow;
+}
+.yellow-gold-gold-yellow .left {
+  width: 0px;
+  border-top: 10px solid yellow;
+  border-right: 10px solid yellow;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: gold;
+  align-self: start;
+}
+.yellow-gold-gold-yellow .right {
+  width: 0px;
+  border-top: 10px solid gold;
+  border-right: 10px solid gold;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: yellow;
+  align-self: end;
+}
+
+.crimson-black-black-fuchsia {
+  background: crimson;
+}
+.crimson-black-black-fuchsia .left {
+  width: 0px;
+  border-top: 10px solid crimson;
+  border-right: 10px solid crimson;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: start;
+}
+.crimson-black-black-fuchsia .right {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: fuchsia;
+  align-self: end;
+}
+
+.crimson-darkturquoise-fuchsia-crimson {
+  background: crimson;
+}
+.crimson-darkturquoise-fuchsia-crimson .left {
+  width: 0px;
+  border-top: 10px solid crimson;
+  border-right: 10px solid crimson;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: start;
+}
+.crimson-darkturquoise-fuchsia-crimson .right {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: fuchsia;
+  align-self: end;
+}
+
+.lightgrey-black-black-lightgrey {
+  background: lightgrey;
+}
+.lightgrey-black-black-lightgrey .left {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid lightgrey;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: start;
+}
+.lightgrey-black-black-lightgrey .right {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: lightgrey;
+  align-self: end;
+}
+
+.red-darkturquoise-darkturquoise-purple {
+  background: darkturquoise;
+}
+.red-darkturquoise-darkturquoise-purple .left {
+  width: 0px;
+  border-top: 10px solid darkturquoise;
+  border-right: 10px solid darkturquoise;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: red;
+  align-self: start;
+}
+.red-darkturquoise-darkturquoise-purple .right {
+  width: 0px;
+  border-top: 10px solid purple;
+  border-right: 10px solid purple;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: darkturquoise;
+  align-self: end;
+}
+
+.darkturquoise-black-black-fuchsia {
+  background: darkturquoise;
+}
+.darkturquoise-black-black-fuchsia .left {
+  width: 0px;
+  border-top: 10px solid darkturquoise;
+  border-right: 10px solid darkturquoise;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: start;
+}
+.darkturquoise-black-black-fuchsia .right {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: fuchsia;
+  align-self: end;
+}
+
+.crimson-darkturquoise-fuchsia-crimson {
+  background: crimson;
+}
+.crimson-darkturquoise-fuchsia-crimson .left {
+  width: 0px;
+  border-top: 10px solid crimson;
+  border-right: 10px solid crimson;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: darkturquoise;
+  align-self: start;
+}
+.crimson-darkturquoise-fuchsia-crimson .right {
+  width: 0px;
+  border-top: 10px solid fuchsia;
+  border-right: 10px solid fuchsia;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: crimson;
+  align-self: end;
+}
+
+.fuchsia-red-red-crimson {
+  background: red;
+}
+.fuchsia-red-red-crimson .top {
+  width: 0px;
+  border-top: 10px solid fuchsia;
+  border-right: 10px solid fuchsia;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: red;
+  align-self: start;
+}
+.fuchsia-red-red-crimson .bottom {
+  width: 0px;
+  border-top: 10px solid red;
+  border-right: 10px solid red;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: crimson;
+  align-self: end;
+}
+
+.black-lightgrey-grey-black {
+  background: lightgrey;
+}
+.black-lightgrey-grey-black .top {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: lightgrey;
+  align-self: start;
+}
+.black-lightgrey-grey-black .bottom {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid grey;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: end;
+}
+
+.yellow-gold-gold-grey {
+  background: gold;
+}
+.yellow-gold-gold-grey .top {
+  width: 0px;
+  border-top: 10px solid yellow;
+  border-right: 10px solid yellow;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: gold;
+  align-self: start;
+}
+.yellow-gold-gold-grey .bottom {
+  width: 0px;
+  border-top: 10px solid gold;
+  border-right: 10px solid gold;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: grey;
+  align-self: end;
+}
+
+.black-lightgrey-grey-black {
+  background: lightgrey;
+}
+.black-lightgrey-grey-black .top {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: lightgrey;
+  align-self: start;
+}
+.black-lightgrey-grey-black .bottom {
+  width: 0px;
+  border-top: 10px solid grey;
+  border-right: 10px solid grey;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: end;
+}
+
+.lightgrey-lightgrey-lightgrey-grey {
+  background: lightgrey;
+}
+.lightgrey-lightgrey-lightgrey-grey .top {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid lightgrey;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: lightgrey;
+  align-self: start;
+}
+.lightgrey-lightgrey-lightgrey-grey .bottom {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid lightgrey;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: grey;
+  align-self: end;
+}
+
+.black-yellow-lightgrey-black-2 {
+  background: yellow;
+}
+.black-yellow-lightgrey-black-2 .top {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: yellow;
+  align-self: start;
+}
+.black-yellow-lightgrey-black-2 .bottom {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid lightgrey;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: end;
+}
+
+.red-lightgrey-lightgrey-lightgrey {
+  background: lightgrey;
+}
+.red-lightgrey-lightgrey-lightgrey .top {
+  width: 0px;
+  border-top: 10px solid red;
+  border-right: 10px solid red;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: lightgrey;
+  align-self: start;
+}
+.red-lightgrey-lightgrey-lightgrey .bottom {
+  width: 0px;
+  border-top: 10px solid lightgrey;
+  border-right: 10px solid lightgrey;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: lightgrey;
+  align-self: end;
+}
+
+.black-purple-fuchsia-black {
+  background: purple;
+}
+.black-purple-fuchsia-black .top {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: purple;
+  align-self: start;
+}
+.black-purple-fuchsia-black .bottom {
+  width: 0px;
+  border-top: 10px solid fuchsia;
+  border-right: 10px solid fuchsia;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: black;
+  align-self: end;
+}
+
+.fuchsia-purple-purple-fuchsia {
+  background: purple;
+}
+.fuchsia-purple-purple-fuchsia .top {
+  width: 0px;
+  border-top: 10px solid fuchsia;
+  border-right: 10px solid fuchsia;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: purple;
+  align-self: start;
+}
+.fuchsia-purple-purple-fuchsia .bottom {
+  width: 0px;
+  border-top: 10px solid purple;
+  border-right: 10px solid purple;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: fuchsia;
+  align-self: end;
+}
+
+.black-purple-purple-purple {
+  background: purple;
+}
+.black-purple-purple-purple .top {
+  width: 0px;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: purple;
+  align-self: start;
+}
+.black-purple-purple-purple .bottom {
+  width: 0px;
+  border-top: 10px solid purple;
+  border-right: 10px solid purple;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  background: purple;
+  align-self: end;
+}
+
 .grey-purple-grey-black {
   background: grey;
 }
-.grey-purple-grey-black .left {
+.grey-purple-grey-black .top {
   width: 0px;
   border-top: 10px solid purple;
   border-right: 10px solid purple;
@@ -41,7 +517,7 @@
   background: grey;
   align-self: start;
 }
-.grey-purple-grey-black .right {
+.grey-purple-grey-black .bottom {
   width: 0px;
   border-top: 10px solid grey;
   border-right: 10px solid grey;

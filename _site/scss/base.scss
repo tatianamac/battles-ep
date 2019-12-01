@@ -9,6 +9,7 @@ $dkgrey: #111111;
 $black: black;
 $gold: gold;
 $yellow: yellow;
+$pink: pink;
 $red: red;
 $crimson: crimson; 
 $dodgerblue: dodgerblue;
@@ -20,7 +21,7 @@ $darkturquoise: darkturquoise;
 
 .grid {
     display: grid;
-    grid-template-columns: 20px 1fr 30px 2fr;
+    grid-template-columns: 20px 1fr 30px 2fr repeat(12, 20px);
     grid-template-rows: 1fr;
     padding: 5rem 10rem;
 }
@@ -31,6 +32,61 @@ $darkturquoise: darkturquoise;
 
 .right {
     background: purple;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right-set-1 {
+    display: grid;
+    grid-template-columns: repeat(12, 20px);
+    grid-template-rows: repeat(21, 20px);
+    background: black;
+    height: 160px;
+}
+
+.start-c-4 {
+    grid-column-start: 4;
+}
+
+.span-c-2 {
+    grid-column: span 2;
+}
+
+.span-c-3 {
+    grid-column: span 3;
+}
+
+.span-c-7 {
+    grid-column: span 7;
+}
+
+.span-c-9 {
+    grid-column: span 9;
+}
+
+.span-c-11 {
+    grid-column: span 11;
+}
+
+.span-r-3 {
+    grid-row: span 3;
+}
+
+.span-r-7 {
+    grid-row: span 7;
+}
+
+.span-r-8 {
+    grid-row: span 8;
+}
+
+.span-r-9 {
+    grid-row: span 9;
+}
+
+.span-r-10 {
+    grid-row: span 10;
 }
 
 @mixin justified($direction)
@@ -94,16 +150,253 @@ $darkturquoise: darkturquoise;
 .border-left {
     display: flex;
 }
-// SECTION A
 
-.#{$grey}-#{$purple}-#{$grey}-#{$black} {
-    background: grey;
+.black {
+    background: black;
+}
+
+// SECTION D
+
+.#{$crimson}-#{$purple}-#{$red}-#{$crimson} {
+    background: crimson;
 
     .left {
-    @include box-rev-l(#{$purple}, #{$grey});
+    @include box-rev-l(#{$crimson}, #{$purple});
     }
 
     .right {
+    @include box-rev-r(#{$crimson}, #{$red});
+    }
+}
+
+.#{$crimson}-#{$black}-#{$black}-#{$gold} {
+    background: crimson;
+
+    .left {
+    @include box-rev-l(#{$crimson}, #{$black});
+    }
+
+    .right {
+    @include box-rev-r(#{$black}, #{$gold});
+    }
+}
+
+.#{$yellow}-#{$gold}-#{$gold}-#{$yellow} {
+    background: yellow;
+
+    .left {
+    @include box-rev-l(#{$yellow}, #{$gold});
+    }
+
+    .right {
+    @include box-rev-r(#{$gold}, #{$yellow});
+    }
+}
+
+.#{$crimson}-#{$black}-#{$black}-#{$fuchsia} {
+    background: crimson;
+
+    .left {
+    @include box-rev-l(#{$crimson}, #{$black});
+    }
+
+    .right {
+    @include box-rev-r(#{$black}, #{$fuchsia});
+    }
+}
+
+.#{$crimson}-#{$darkturquoise}-#{$fuchsia}-#{$crimson} {
+    background: crimson;
+
+    .left {
+    @include box-rev-l(#{$crimson}, #{$black});
+    }
+
+    .right {
+    @include box-rev-r(#{$black}, #{$fuchsia});
+    }
+}
+
+.#{$lightgrey}-#{$black}-#{$black}-#{$lightgrey} {
+    background: lightgrey;
+
+    .left {
+    @include box-rev-l(#{$lightgrey}, #{$black});
+    }
+
+    .right {
+    @include box-rev-r(#{$black}, #{$lightgrey});
+    }
+}
+
+//section C
+.#{$red}-#{$darkturquoise}-#{$darkturquoise}-#{$purple} {
+    background: darkturquoise;
+
+    .left {
+    @include box-rev-l(#{$darkturquoise}, #{$red});
+    }
+
+    .right {
+    @include box-rev-r(#{$purple}, #{$darkturquoise});
+    }
+}
+
+.#{$darkturquoise}-#{$black}-#{$black}-#{$fuchsia} {
+    background: darkturquoise;
+
+    .left {
+    @include box-rev-l(#{$darkturquoise}, #{$black});
+    }
+
+    .right {
+    @include box-rev-r(#{$black}, #{$fuchsia});
+    }
+}
+
+.#{$crimson}-#{$darkturquoise}-#{$fuchsia}-#{$crimson} {
+    background: crimson;
+
+    .left {
+    @include box-rev-l(#{$crimson}, #{$darkturquoise});
+    }
+
+    .right {
+    @include box-rev-r(#{$fuchsia}, #{$crimson});
+    }
+}
+
+// SECTION B
+
+.#{$fuchsia}-#{$red}-#{$red}-#{$crimson} {
+    background: red;
+
+    .top {
+    @include box-rev-l(#{$fuchsia}, #{$red});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$red}, #{$crimson});
+    }
+}
+
+.#{$black}-#{$lightgrey}-#{$grey}-#{$black} {
+    background: lightgrey;
+
+    .top {
+    @include box-rev-l(#{$black}, #{$lightgrey});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$grey}, #{$black});
+    }
+}
+
+.#{$yellow}-#{$gold}-#{$gold}-#{$grey} {
+    background: gold;
+
+    .top {
+    @include box-rev-l(#{$yellow}, #{$gold});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$gold}, #{$grey});
+    }
+}
+
+.#{$black}-#{$lightgrey}-#{$grey}-#{$black} {
+    background: lightgrey;
+
+    .top {
+    @include box-rev-l(#{$black}, #{$lightgrey});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$grey}, #{$black});
+    }
+}
+
+.#{$lightgrey}-#{$lightgrey}-#{$lightgrey}-#{$grey} {
+    background: lightgrey;
+
+    .top {
+    @include box-rev-l(#{$lightgrey}, #{$lightgrey});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$lightgrey}, #{$grey});
+    }
+}
+
+.#{$black}-#{$yellow}-#{$lightgrey}-#{$black}-2 {
+    background: yellow;
+
+    .top {
+    @include box-rev-l(#{$black}, #{$yellow});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$lightgrey}, #{$black});
+    }
+}
+
+.#{$red}-#{$lightgrey}-#{$lightgrey}-#{$lightgrey} {
+    background: lightgrey;
+
+    .top {
+    @include box-rev-l(#{$red}, #{$lightgrey});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$lightgrey}, #{$lightgrey});
+    }
+}
+
+.#{$black}-#{$purple}-#{$fuchsia}-#{$black} {
+    background: purple;
+
+    .top {
+    @include box-rev-l(#{$black}, #{$purple});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$fuchsia}, #{$black});
+    }
+}
+
+.#{$fuchsia}-#{$purple}-#{$purple}-#{$fuchsia} {
+    background: purple;
+
+    .top {
+    @include box-rev-l(#{$fuchsia}, #{$purple});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$purple}, #{$fuchsia});
+    }
+}
+
+.#{$black}-#{$purple}-#{$purple}-#{$purple} {
+    background: purple;
+
+    .top {
+    @include box-rev-l(#{$black}, #{$purple});
+    }
+
+    .bottom {
+    @include box-rev-r(#{$purple}, #{$purple});
+    }
+}
+
+// SECTION A
+.#{$grey}-#{$purple}-#{$grey}-#{$black} {
+    background: grey;
+
+    .top {
+    @include box-rev-l(#{$purple}, #{$grey});
+    }
+
+    .bottom {
     @include box-rev-r(#{$grey}, #{$black});
     }
 }
